@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Employee Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            place-items: center;
+            padding: 80px;
+            background-color: #F7F9F2;
+        }
+
+        .wrapper {
+            width: 380px;
+            background-color: #EEF7FF;
+            border-radius: 15px;
+            border: 1px solid black;
+            box-shadow: 4px 4px 4px black;
+        }
+
+            .wrapper .title {
+                font-weight: 600;
+                font-size: 35px;
+                text-align: center;
+                line-height: 100px;
+                color: #fff;
+                user-select: none;
+                border-radius: 15px 15px 0 0;
+                background-image: linear-gradient(-135deg, #36BA98, #667BC6);
+            }
+
+            .wrapper .form-group {
+                margin-top: 10px;
+                padding:0 15px ;
+            }
+   /*     .text-center {
+            width: 150px;
+            margin-bottom:20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            background-image: linear-gradient(-135deg, #36BA98, #667BC6);
+            border-radius: 25px;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="header">
+
+        <div class="login">
+            <div class="wrapper">
+                <div class="title">
+                    <h2> Employee Login</h2>
+                </div>
+                <div class="form-group">
+                    <label for="name">Userame<span style="color:red;">*</span></label>
+                    <input type="text" class="form-control" placeholder="Enter your username" id="name" />
+                </div>
+      
+                <div class="form-group">
+                    <label for="pasword">Password<span style="color:red;">*</span></label>
+                    <input type="password" class="form-control" placeholder="Enter your password" id="pswd" />
+                </div><br />
+
+                <div class="text-center ">
+                    <a href="index.aspx"  class ="btn text-center w-25 " Style="background-image: linear-gradient(-135deg, #36BA98, #667BC6); border-radius: 25px;">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
